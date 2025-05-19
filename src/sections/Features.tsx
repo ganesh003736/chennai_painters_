@@ -1,5 +1,5 @@
 import React from 'react';
-import { PaintBucket, Users, Palette } from 'lucide-react';
+import { PaintBucket, Users } from 'lucide-react';
 import Container from '../components/Container';
 import SectionTitle from '../components/SectionTitle';
 import AnimatedElement from '../components/AnimatedElement';
@@ -34,62 +34,38 @@ const Features: React.FC = () => {
           <div className="w-full lg:w-1/2">
             <AnimatedElement animation="fade-up">
               <SectionTitle
-                title="Our Exceptional Features"
+                title="Quality Features of Chennai Painting Contractors You Can Trust"
                 centered={false}
                 className="mb-10"
               />
               
               <Feature
                 icon={<PaintBucket className="w-6 h-6 text-primary-600" />}
-                title="Premium Weather-Resistant Paints"
-                description="We use top-quality paints that provide long-lasting protection against Chennai's climate, giving you peace of mind and reducing future maintenance."
+                title="High-Quality Materials"
+                description="You get a stunning finish that lasts for years means your space will look beautiful, and you won't have to worry about repainting anytime soon."
               />
               
               <Feature
                 icon={<Users className="w-6 h-6 text-primary-600" />}
-                title="Professional Experienced Team"
-                description="Our skilled painters deliver a flawless finish, enhancing your property's value and giving you pride in your home."
-              />
-              
-              <Feature
-                icon={<Palette className="w-6 h-6 text-primary-600" />}
-                title="Tailored Painting Solutions"
-                description="We customize our services to meet your specific needs, ensuring optimal results and personal satisfaction."
+                title="Experienced Team"
+                description="Professional results, delivered efficiently means your project is handled by skilled Chennai painters, giving you peace of mind and confidence in the outcome."
               />
             </AnimatedElement>
           </div>
           
           <div className="w-full lg:w-1/2">
             <AnimatedElement animation="slide-in-right" delay={200}>
-              <div className="grid grid-cols-4 grid-rows-4 gap-4 h-[500px]">
-                <div className="col-span-2 row-span-2 rounded-lg overflow-hidden">
-                  <img 
-                    src="https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                    alt="Exterior painting" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="col-span-2 row-span-1 rounded-lg overflow-hidden">
-                  <img 
-                    src="https://images.pexels.com/photos/5691626/pexels-photo-5691626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                    alt="Painter at work" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="col-span-1 row-span-3 rounded-lg overflow-hidden">
-                  <img 
-                    src="https://images.pexels.com/photos/8092522/pexels-photo-8092522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                    alt="Paint samples" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="col-span-3 row-span-2 rounded-lg overflow-hidden">
-                  <img 
-                    src="https://images.pexels.com/photos/6758773/pexels-photo-6758773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                    alt="Beautiful exterior" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+              <div className="grid grid-cols-2 gap-4">
+                <img 
+                  src="https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg" 
+                  alt="Professional painting work" 
+                  className="rounded-lg shadow-lg w-full h-64 object-cover"
+                />
+                <img 
+                  src="https://images.pexels.com/photos/8092522/pexels-photo-8092522.jpeg" 
+                  alt="Quality materials" 
+                  className="rounded-lg shadow-lg w-full h-64 object-cover"
+                />
               </div>
             </AnimatedElement>
           </div>
@@ -98,5 +74,3 @@ const Features: React.FC = () => {
     </section>
   );
 };
-
-export default Features;

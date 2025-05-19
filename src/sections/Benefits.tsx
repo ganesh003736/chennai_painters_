@@ -31,7 +31,7 @@ const Benefits: React.FC = () => {
       <Container>
         <AnimatedElement animation="fade-up">
           <SectionTitle
-            title="Transform Your Space with These Amazing Benefits"
+            title="Transform Your Space with These Amazing Benefits from Professional Chennai Painters"
             subtitle="Experience the difference with our professional Chennai painters"
             centered={true}
           />
@@ -63,5 +63,3 @@ const Benefits: React.FC = () => {
     </section>
   );
 };
-
-export default Benefits;

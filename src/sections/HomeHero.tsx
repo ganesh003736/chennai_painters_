@@ -68,5 +68,3 @@ const HomeHero: React.FC = () => {
     </section>
   );
 };
-
-export default HomeHero;

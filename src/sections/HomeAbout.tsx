@@ -56,5 +56,3 @@ const HomeAbout: React.FC = () => {
     </section>
   );
 };
-
-export default HomeAbout;

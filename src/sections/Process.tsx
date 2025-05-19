@@ -9,10 +9,11 @@ type ProcessStepProps = {
   icon: React.ReactNode;
   title: string;
   description: string;
+  benefit: string;
   delay: number;
 };
 
-const ProcessStep: React.FC<ProcessStepProps> = ({ number, icon, title, description, delay }) => {
+const ProcessStep: React.FC<ProcessStepProps> = ({ number, icon, title, description, benefit, delay }) => {
   return (
     <AnimatedElement animation="fade-up" delay={delay} className="w-full md:w-1/3 p-4">
       <div className="relative">
@@ -24,7 +25,8 @@ const ProcessStep: React.FC<ProcessStepProps> = ({ number, icon, title, descript
             {icon}
           </div>
           <h3 className="text-xl font-bold text-gray-900 mb-4">{title}</h3>
-          <p className="text-gray-600">{description}</p>
+          <p className="text-gray-600 mb-4">{description}</p>
+          <p className="text-primary-600 font-medium">Benefit: {benefit}</p>
         </div>
         
         {number < 3 && (
@@ -39,17 +41,11 @@ const ProcessStep: React.FC<ProcessStepProps> = ({ number, icon, title, descript
 
 const Process: React.FC = () => {
   return (
-    <section className="py-20 bg-gray-50 relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-primary-100 opacity-50"></div>
-        <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-terracotta-100 opacity-50"></div>
-      </div>
-      
-      <Container className="relative z-10">
+    <section className="py-20 bg-gray-50">
+      <Container>
         <AnimatedElement animation="fade-up">
           <SectionTitle
-            title="Transform Your Home in Three Simple Steps"
+            title="Easy as 1-2-3: Transform Your Space with Our Chennai Painters Process"
             centered={true}
           />
         </AnimatedElement>
@@ -58,24 +54,27 @@ const Process: React.FC = () => {
           <ProcessStep
             number={1}
             icon={<Calendar className="w-8 h-8 text-primary-600" />}
-            title="Schedule Your Free Consultation"
-            description="Contact us to arrange a convenient time for a comprehensive exterior assessment, so you receive expert advice tailored to your property's needs."
+            title="Book a Consultation"
+            description="Contact us to schedule a consultation with your trusted Chennai painter, where we'll discuss your project needs and goals."
+            benefit="Get clarity on your vision and how our painting contractors in Chennai can bring it to life"
             delay={100}
           />
           
           <ProcessStep
             number={2}
             icon={<FileEdit className="w-8 h-8 text-primary-600" />}
-            title="Customized Painting Plan"
-            description="We create a tailored painting solution using premium materials, ensuring high-quality workmanship for a durable and beautiful exterior."
+            title="Get a Personalized Quote"
+            description="We provide a detailed, transparent quote based on your requirements."
+            benefit="Know exactly what to expect, with no surprises"
             delay={200}
           />
           
           <ProcessStep
             number={3}
             icon={<Home className="w-8 h-8 text-primary-600" />}
-            title="Enjoy Lasting Beauty"
-            description="Experience the transformation as your property gains enhanced value and curb appeal while you save on future maintenance costs."
+            title="Enjoy the Transformation"
+            description="Our expert painters handle every detail from start to finish."
+            benefit="Sit back and enjoy a beautifully painted space without stress"
             delay={300}
           />
         </div>
@@ -83,5 +82,3 @@ const Process: React.FC = () => {
     </section>
   );
 };
-
-export default Process;
