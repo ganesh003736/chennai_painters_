@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brush, Home, Palette, Wood, Shield, Droplets } from 'lucide-react';
+import { Brush, Home, Palette, Book as Wood, Shield, Droplets } from 'lucide-react';
 import Container from '../components/Container';
 import SectionTitle from '../components/SectionTitle';
 import AnimatedElement from '../components/AnimatedElement';
@@ -83,3 +83,5 @@ const Services: React.FC = () => {
     </section>
   );
 };
+
+export default Services

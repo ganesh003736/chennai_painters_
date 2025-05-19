@@ -74,3 +74,5 @@ const Features: React.FC = () => {
     </section>
   );
 };
+
+export default Features
