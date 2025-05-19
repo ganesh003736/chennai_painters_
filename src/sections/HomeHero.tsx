@@ -1,5 +1,5 @@
 import React from 'react';
-import { PaintBucket } from 'lucide-react';
+import { PaintBucket, Clock, CheckCircle } from 'lucide-react';
 import Container from '../components/Container';
 import Button from '../components/Button';
 import AnimatedElement from '../components/AnimatedElement';
@@ -18,7 +18,7 @@ const HomeHero: React.FC = () => {
             <AnimatedElement animation="fade-up">
               <div className="flex items-center space-x-2 mb-6">
                 <PaintBucket className="w-8 h-8 text-accent-500" />
-                <span className="text-lg font-medium text-accent-400">Professional Chennai Painters</span>
+                <span className="text-lg font-medium text-accent-400">Chennai Painters You Can Trust</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -28,6 +28,17 @@ const HomeHero: React.FC = () => {
               <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl">
                 We provide high-quality painting services as the leading painting contractor in Chennai—zero stress, no surprises. Get your dream space painted without the hassle.
               </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-6 h-6 text-accent-500" />
+                  <span>No Stress, Guaranteed</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-6 h-6 text-accent-500" />
+                  <span>Professional-Quality Results</span>
+                </div>
+              </div>
               
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <Button variant="secondary" size="lg">

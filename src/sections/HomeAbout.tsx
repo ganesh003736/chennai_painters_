@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../components/Container';
 import AnimatedElement from '../components/AnimatedElement';
 import SectionTitle from '../components/SectionTitle';
-import { Clock, Award, Users } from 'lucide-react';
+import { Clock, Award, Users, CheckCircle } from 'lucide-react';
 
 const HomeAbout: React.FC = () => {
   return (
@@ -45,9 +45,9 @@ const HomeAbout: React.FC = () => {
               </div>
               
               <div className="bg-primary-50 p-6 rounded-lg">
-                <Clock className="w-10 h-10 text-primary-600 mb-4" />
-                <h3 className="text-xl font-bold text-gray-900 mb-2">On-Time</h3>
-                <p className="text-gray-600">Completion</p>
+                <CheckCircle className="w-10 h-10 text-primary-600 mb-4" />
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Quality</h3>
+                <p className="text-gray-600">Guaranteed</p>
               </div>
             </div>
           </div>

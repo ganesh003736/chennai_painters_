@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Paintbrush, Settings } from 'lucide-react';
+import { ShieldCheck, Paintbrush, Calculator } from 'lucide-react';
 import Container from '../components/Container';
 import SectionTitle from '../components/SectionTitle';
 import AnimatedElement from '../components/AnimatedElement';
@@ -31,30 +31,31 @@ const Benefits: React.FC = () => {
       <Container>
         <AnimatedElement animation="fade-up">
           <SectionTitle
-            title="Unlock Exclusive Advantages with Our Exterior Painting Services"
+            title="Transform Your Space with These Amazing Benefits"
+            subtitle="Experience the difference with our professional Chennai painters"
             centered={true}
           />
         </AnimatedElement>
         
         <div className="flex flex-wrap -mx-4">
           <BenefitCard
-            icon={<ShieldCheck className="w-8 h-8 text-primary-600" />}
-            title="Long-Lasting Protection"
-            description="Using premium, weather-resistant paints, we offer long-lasting protection against Chennai's harsh climate, giving you peace of mind and saving you money on maintenance."
+            icon={<Paintbrush className="w-8 h-8 text-primary-600" />}
+            title="Professional Quality Results"
+            description="Our experienced Chennai painters use high-quality materials to ensure your space looks stunning and the results last. This means your property will stand out and stay beautiful for years."
             delay={100}
           />
           
           <BenefitCard
-            icon={<Paintbrush className="w-8 h-8 text-primary-600" />}
-            title="Expert Craftsmanship"
-            description="Our professional, experienced team delivers high-quality workmanship and a flawless finish, enhancing your property's value and giving you pride of ownership."
+            icon={<ShieldCheck className="w-8 h-8 text-primary-600" />}
+            title="Stress-Free Process"
+            description="From consultation to clean-up, our painting contractors in Chennai handle every detail with care. You can relax, knowing that your painting project will be completed seamlessly, with no hassles or hidden surprises."
             delay={200}
           />
           
           <BenefitCard
-            icon={<Settings className="w-8 h-8 text-primary-600" />}
-            title="Customized Solutions"
-            description="We provide painting solutions tailored to your needs, ensuring optimal results that reflect your personal style and bring you satisfaction."
+            icon={<Calculator className="w-8 h-8 text-primary-600" />}
+            title="Transparent Pricing"
+            description="We provide upfront, detailed quotes with no hidden fees. You know exactly what to expect, giving you confidence and peace of mind throughout the project."
             delay={300}
           />
         </div>
