@@ -33,3 +33,5 @@ const HomeProblem: React.FC = () => {
     </section>
   );
 };
+
+export default HomeProblem
